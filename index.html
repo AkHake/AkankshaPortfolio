@@ -19,7 +19,7 @@
     <header class="navbar">
       <div class="container">
         <!-- <h1 class="logo">Akanksha.</h1> -->
-        <h1 class="logo"><a href="#home">Akanksha.</a></h1>
+        <h1 class="logo"><a href="/">Akanksha.</a></h1>
         <!-- <nav>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -29,23 +29,47 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav> -->
+        <!-- <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#responsibility">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            🌙
+          </button>
+        </nav> -->
         <nav class="nav">
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#responsibility">Leadership</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#responsibility" class="nav-link">Leadership</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
 
-  <!-- Hamburger -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
+          <div class="nav-actions">
+            <button id="themeToggle" class="theme-toggle">🌙</button>
 
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -72,13 +96,13 @@
     </section> -->
 
     <!-- <section class="hero"> -->
-      <section class="hero" id="home">
+    <section class="hero" id="home">
       <div class="container hero-content">
         <!-- LEFT TEXT -->
         <div class="hero-text">
-          <h2>Hello, I’m</h2>
+          <h2>Hello, I am</h2>
           <h1>Akanksha Hake</h1>
-          <p>Frontend Developer | Flutter Enthusiast | Tech & Event Lead</p>
+          <p>Web Developer | Frontend Developer | Tech & Event Lead</p>
 
           <div class="hero-buttons">
             <a href="#projects" class="btn primary-btn">View Projects</a>
@@ -102,22 +126,22 @@
       </div> -->
           <div class="floating-card card-1">
             <div class="card-inner">
-            <h4>💻 Projects</h4>
-            <p>5+ real-world applications</p>
+              <h4>💻 Projects</h4>
+              <p>5+ real-world applications</p>
             </div>
           </div>
 
           <div class="floating-card card-2">
             <div class="card-inner">
-            <h4>🚀 Tech Stack</h4>
-            <p>React · Flutter · MERN</p>
+              <h4>🚀 Tech Stack</h4>
+              <p>React · Flutter · MERN</p>
             </div>
           </div>
 
           <div class="floating-card card-3">
             <div class="card-inner">
-            <h4>🎤 Leadership</h4>
-            <p>Event Head · Finance Lead</p>
+              <h4>🎤 Leadership</h4>
+              <p>Event Head · Finance Lead</p>
             </div>
           </div>
         </div>
@@ -217,6 +241,9 @@
         <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card">
+            <div class="project-thumb medi">
+              <span>🏥 MediVault</span>
+            </div>
             <h3>MediVault</h3>
             <p>
               A MERN-based healthcare record management system with secure data
@@ -225,7 +252,7 @@
             </p>
             <span class="tech-stack">MERN Stack</span>
 
-            <div class="project-s">
+            <div class="project-links">
               <a href="#" class="btn primary-btn">Live</a>
               <a href="#" class="btn secondary-btn">GitHub</a>
             </div>
@@ -233,6 +260,9 @@
 
           <!-- Project 2 -->
           <div class="project-card">
+            <div class="project-thumb music">
+              <span>🎸 AC Musicals</span>
+            </div>
             <h3>AC Musicals</h3>
             <p>
               An e-commerce platform for musical instruments featuring
@@ -241,7 +271,7 @@
             </p>
             <span class="tech-stack">MERN Stack</span>
 
-            <div class="project-s">
+            <div class="project-links">
               <a href="#" class="btn primary-btn">Live</a>
               <a href="#" class="btn secondary-btn">GitHub</a>
             </div>
@@ -249,6 +279,10 @@
 
           <!-- Project 3 -->
           <div class="project-card">
+            <!-- <img src="assets/projects/medivault.png" /> -->
+            <div class="project-thumb meals">
+              <span>🍔 Doorstep Meals</span>
+            </div>
             <h3>Doorstep Meals</h3>
             <p>
               A Flutter-based food delivery app with user login, categorized
@@ -257,7 +291,7 @@
             </p>
             <span class="tech-stack">Flutter, Firebase</span>
 
-            <div class="project-s">
+            <div class="project-links">
               <a href="#" class="btn primary-btn">Demo</a>
               <a href="#" class="btn secondary-btn">GitHub</a>
             </div>
@@ -265,6 +299,9 @@
 
           <!-- Project 4 -->
           <div class="project-card">
+            <div class="project-thumb traffic">
+              <span>🚦 Traffic Pattern Analysis</span>
+            </div>
             <h3>Traffic Pattern Analysis</h3>
             <p>
               A machine learning project that predicts traffic congestion during
@@ -273,13 +310,16 @@
             </p>
             <span class="tech-stack">Python, ML</span>
 
-            <div class="project-s">
+            <div class="project-links">
               <a href="#" class="btn secondary-btn">GitHub</a>
             </div>
           </div>
 
           <!-- Project 5 -->
           <div class="project-card">
+            <div class="project-thumb ocr">
+              <span>📹 Video Text Extractor (OCR)</span>
+            </div>
             <h3>Video Text Extractor (OCR)</h3>
             <p>
               A computer vision system that extracts text from video frames
@@ -287,7 +327,7 @@
             </p>
             <span class="tech-stack">Python, OpenCV</span>
 
-            <div class="project-s">
+            <div class="project-links">
               <a href="#" class="btn secondary-btn">GitHub</a>
             </div>
           </div>
@@ -360,20 +400,20 @@
           interesting ideas. Feel free to reach out!
         </p>
 
-        <div class="contact-s">
-          <a href="mailto:akanksha.hake123@gmail.com" class="contact-">
+        <div class="contact-links">
+          <a href="mailto:akanksha.hake123@gmail.com" class="contact-link">
             akanksha.hake123@gmail.com
           </a>
 
           <a
             href="https://edin.com/in/akankshahake"
             target="_blank"
-            class="contact-"
+            class="contact-link"
           >
-            edIn
+            LinkedIn
           </a>
 
-          <a href="https://github.com/" target="_blank" class="contact-">
+          <a href="https://github.com/" target="_blank" class="contact-link">
             GitHub
           </a>
         </div>
