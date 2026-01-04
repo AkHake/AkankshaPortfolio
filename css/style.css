@@ -793,6 +793,11 @@ ul {
   background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
+.project-thumb.animals {
+  background: linear-gradient(135deg, #16a34a, #4ade80);
+}
+
+
 .project-card:hover .project-thumb {
   /* transform: scale(1.03); */
   transition: transform 0.3s ease;
